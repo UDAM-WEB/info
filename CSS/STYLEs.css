@@ -168,6 +168,60 @@ h3{
     margin-top: 10px;
 }
 
+@media(min-width: 1366px) and (max-width: 1919px){
+    .value1{
+        flex: 1;
+    }
+
+    li, a{      
+        font-size: 19px;
+    }
+
+    .header ul li a{
+        position: relative;
+        margin: 0 50px;
+        text-decoration: none;
+    }
+
+     #logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    .Main{
+        font-size: 20px;
+        height: 344px;
+    }
+    iframe{
+        width: 730px;
+        height: 410px;
+    }
+
+    .footer{
+        margin-top: 10px;
+    }
+
+    #icon{
+        width: 25px;
+        height: 25px;
+    }
+
+    #contact{
+        margin-top: 20px;
+    }
+
+    button{
+        width: 500px;
+        height: 70px;
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    #about{
+        margin-top: 80px;
+    }
+    
+}
 
 @media all and (min-width: 800px){
     .Main{
