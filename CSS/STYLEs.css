@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+*{
+    box-sizing: border-box;
+}
+
+*{margin: 0; padding: 0;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li, a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: greenyellow;
+    text-shadow: 2px 2px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header{
+    margin-bottom: 50px;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10%;
+    background-color: rgba(0, 0, 0, 0.377);
+    z-index: 100000;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: blue;
+}
+
+#logo{
+    width: 20px;
+    height: 20px;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.container>*{
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+.footer{
+    font-size: 15px;
+    height: 70px;
+    list-style-type: none; 
+    background-color: rgba(0, 0, 0, 0.555);
+    font-size: 8px;
+    margin-top: 200px;
+}
+
+h1{
+    margin-top: 20px;
+    color: greenyellow;
+}
+
+h2{
+    font-family: 'Koulen', cursive;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,189,255,1) 0%, rgba(30,8,236,1) 100%, rgba(9,26,121,1) 100%);
+}
+
+#Name{
+    color: white;
+}
+
+p{
+    text-align: left;
+    font-family: 'Suwannaphum', serif;
+}
+
+.Main{
+    text-align: left;
+    background-color: rgba(0, 174, 255, 0.767);
+    height: 240px;
+    font-size: 12px;
+}
+
+iframe{
+
+    width: 340px;
+    height: 220px;
+}
+
+.value1{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(240,238,238,1) 0%, rgba(8,124,236,1) 100%, rgba(9,115,121,1) 100%);
+}
+
+#profile{
+    height: 287px;
+    width: 270px;
+    border-radius: 8px;
+}
+
+.value2{
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#icon{
+    width: 12px;
+    height: 12px;
+}
+
+#contact{
+    margin-top: 170px;
+}
+
+button{
+    width: 300px;
+    height: 60px;
+    font-size: 14px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(176,255,0,1) 0%, rgba(236,180,8,1) 100%, rgba(9,45,121,1) 100%);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+h3{
+    margin: 10px;
+    font-family: 'Suwannaphum', serif;
+}
+#btnImage{
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+}
+
+#about{
+    margin-top: 10px;
+}
+
+
+@media all and (min-width: 800px){
+    .Main{
+        flex: 3;
+    }
+
+    .value1{
+        order: 1;
+    }
+
+    .value2{
+        order: 2;
+    }
+
+    .Main{
+        order: 2;
+    }
+
+    .footer{
+        order: 4;
+    }
+    li, a{      
+        font-size: 19px;
+    }
+
+    header ul li a{
+        position: relative;
+        margin: 0 50px;
+        text-decoration: none;
+    }
+
+    #logo{
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+
+@media all and (min-width: 600px){
+    .value1{
+        flex: 1;
+    }
+
+    li, a{      
+        font-size: 19px;
+    }
+
+    .header ul li a{
+        position: relative;
+        margin: 0 50px;
+        text-decoration: none;
+    }
+
+    #logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    .Main{
+        font-size: 20px;
+        height: 344px;
+    }
+    iframe{
+        width: 730px;
+        height: 410px;
+    }
+
+    .footer{
+        margin-top: 10px;
+    }
+
+    #icon{
+        width: 25px;
+        height: 25px;
+    }
+
+    #contact{
+        margin-top: 20px;
+    }
+
+    button{
+        width: 500px;
+        height: 70px;
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    #about{
+        margin-top: 80px;
+    }
+}
