@@ -56,7 +56,9 @@ li a:hover{
 body{
     font-family: 'Bree Serif', serif;
     font-family: 'Kanit', sans-serif;
-    background: #555555;
+    /*background: #555555;*/
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(171,242,228,1) 0%, rgba(236,180,8,0.23853291316526615) 100%, rgba(9,45,121,1) 100%);
 }
 .container{
     width: 400px;
