@@ -6,40 +6,40 @@
     <style>
         body{
             margin: 0 auto;
-            width: 50%;
-            background-color: gray;
-            background-image: url(Picture/wallpaperflare.com_wallpaper\ \(1\).jpg);
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        .wrapper .obj{
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
         }
         .wrapper{
-            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .content{
+            width: 525px;
+            height: 400px;
             overflow: hidden;
-            padding-top: 40%;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 50px;
+            background-color:steelblue;
         }
-        #input{
-            width: 600px;
-            height: 33px;
-            font-size: 15px;
+
+        .content input{
+            width: 100%;
+            padding: 10px;
+            height: auto;
         }
-        #convert{
-            height: 41px;
-            width: 100px;
-            font-size: 15px;
-            border: 3px solid rgb(9, 228, 232);
+
+        .btn{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgb(9, 228, 232);
         }
-        #convert:hover{
-            background-color: green;
+        .btn:hover{
+            background-color: rgb(0, 90, 128);
             color: white;
-            font-size: 15px;
+            font-size: 12px;
         }
+
         #input:focus{
             color: blue;
         }
@@ -47,27 +47,20 @@
             color: red;
             text-shadow: 13px 2px 15px black;
             backdrop-filter: blur(20px);
-            -webkit-text-stroke: 1px white;
         }
         span{
-            color: blue;
-            -webkit-text-stroke: 1px cyan;
+            color: orange;
+            /*-webkit-text-stroke: 1px cyan;*/
+        }
+        #conv:hover{
+            background-color: greenyellow;
         }
         #back{
-            color: red;
-            font-size: 15px;
+            margin-left: 30px;
         }
         #back:hover{
             background-color: red;
             color: white;
-        }
-        .btnbox{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 100px;
-            font-size: 25px;
-            background-color: black;
         }
         a{color: yellowgreen;}
     </style>
