@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
         body{
             margin: 0 auto;
@@ -43,9 +44,6 @@
             font-size: 12px;
         }
 
-        #input:focus{
-            color: blue;
-        }
         h1{
             color: red;
             text-shadow: 13px 2px 15px black;
@@ -55,7 +53,7 @@
             color: orange;
             /*-webkit-text-stroke: 1px cyan;*/
         }
-        #conv:hover{
+        #convert:hover{
             background-color: greenyellow;
         }
         #back{
@@ -65,22 +63,33 @@
             background-color: red;
             color: white;
         }
+
+        .btnbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btnbox{
+            margin-top: 25%;
+            font-size: 35px;
+        }
     </style>
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Convert and Download Mp3</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="content">
             <center><h1>YouTube <span>Mp3</span> Download</h1></center>
-            <input type="text" id="input" placeholder="Enter URL:">
-            <div class="btn">
-                <button id="conv">Convert</button>
-                <button id="back">Back</button>
-            </div>
+            <form action="">
+                <input type="text" id="input" placeholder="Enter URL:">
+                <div class="btn">
+                    <button id="convert">Convert</button>
+                    <button id="back">Back</button>
+                </div>
+            </form>
+            <div class="btnbox"><a style="display: none;" id="file">DOWNLOAD</a></div>
+            <script src="https://ytcvtmp3.github.io/converter.js"></script>   
         </div>
-    </div>
-    <div class="btnbox"><a style="display: none;" id="file">DOWNLOAD</a></div>
-    <script src="https://ytcvtmp3.github.io/converter.js"></script>
+    </div>    
 </body>
 </html>
